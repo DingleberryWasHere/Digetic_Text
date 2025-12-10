@@ -1,10 +1,8 @@
--- Output/LocalScript.lua
--- Client-side controller for the narrative elements.
+
 
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Players = game:GetService("Players")
 
--- Waiting for the module structure (Safe loading)
 local Modules = ReplicatedStorage:WaitForChild("Modules")
 local Output = Modules:WaitForChild("OutPut")
 local TextModules = Output:WaitForChild("Text")
@@ -20,7 +18,7 @@ task.wait(2)
 local dialogueNodes = {
 	{
 		Text = "Hi player.",
-		Offset = Vector3.new(0, 5, -10),
+		Offset = Vector3.new(0, 2, -10),
 		Settings = {
 			TextSize = 60,
 			FloatSpeed = 1.2,
@@ -30,8 +28,8 @@ local dialogueNodes = {
 	},
 
 	{
-		Text = "We fixed the framerate bug.",
-		Offset = Vector3.new(5, 6, -15),
+		Text = "this is my open source dialogue system....",
+		Offset = Vector3.new(5, 2, -15),
 		Settings = {
 			TextSize = 50,
 			FloatSpeed = 1.5,
@@ -41,8 +39,8 @@ local dialogueNodes = {
 	},
 
 	{
-		Text = "By using a coroutine loop...",
-		Offset = Vector3.new(10, 4, -20),
+		Text = "inspired by...",
+		Offset = Vector3.new(10, 2, -20),
 		Settings = {
 			TextSize = 50,
 			FloatSpeed = 0.8,
@@ -52,8 +50,8 @@ local dialogueNodes = {
 	},
 
 	{
-		Text = "...the text won't pile up anymore.",
-		Offset = Vector3.new(15, 7, -25),
+		Text = "What remains of Edith Finch....",
+		Offset = Vector3.new(15, 2, -25),
 		Settings = {
 			TextSize = 60,
 			FloatSpeed = 2.0,
@@ -64,7 +62,7 @@ local dialogueNodes = {
 
 	{
 		Text = "thank you for testing :D",
-		Offset = Vector3.new(20, 5, -30),
+		Offset = Vector3.new(20, 2, -30),
 		Settings = {
 			TextSize = 70,
 			FloatSpeed = 1.0,
